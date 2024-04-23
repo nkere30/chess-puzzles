@@ -4,7 +4,7 @@ import java.util.Collection;
 
 public interface ChessBoard {
     static ChessBoard of(Collection<ChessPiece> pieces){
-        throw new UnsupportedOperationException();
+        return new ChessBoardImpl(pieces);
     }
 
     String state();
